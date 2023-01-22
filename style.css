@@ -1,0 +1,54 @@
+h1 {
+    color: #0b658f;
+    font-family: verdana;
+    margin: 10px auto 10px auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 50px;
+    background: linear-gradient(0deg, #becde2, #7cdcdc 30%, #e7a17d);
+    animation: gradient 30s ease infinite;
+    background-size: 200% 200%;
+    font-family: sans-serif;
+} 
+
+svg {
+    /* border: solid 1px white; */
+    justify-content: center;
+    align-items: center;
+}
+
+#tooltip {
+    font-family: courier;
+    font-size: 20px;
+    align-items: center;
+    /* padding-top: 5px;
+    margin-top: 5px; */
+    text-align: center;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-left {
+    width: 55%;
+    height: 5em;
+    margin: 2px;
+    padding: 2px;
+  }
+
+  .flex-right {
+    width: 25%;
+    height: 5em;
+    margin: 2px;
+    padding: 2px;
+  }

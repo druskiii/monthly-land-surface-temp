@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Monthly Heat Map</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="./style.css"></link>
+</head>
+<body>
+    <h1 id="description">🔥 Just How Hot Has The Planet Gotten? 🔥</h1>
+    <svg id="canvas">
+        <text id="title" x="285" y="20" style="fill: white; font: bold 20px Tahoma, sans-serif; 
+            font-family: Tahoma, sans-serif;">Monthly Global Land-Surface Temperatures (1753 - 2015: Base temp 8.66℃)</text>
+    </svg>
+
+    <div class="flex-container">
+        <svg id='legend' class="flex-left">
+            <g>
+                <rect x="10" y="0" width="30" height="30" style="fill:SteelBlue;stroke-width:2;stroke:rgb(0,0,0)"></rect>
+                <text x="60" y="20" fill="white">Variance of ≤ -1</text>
+            </g>
+            <g>
+                <rect x="10" y="40" width="30" height="30" style="fill:LightSteelBlue;stroke-width:2;stroke:rgb(0,0,0)"></rect>
+                <text x="60" y="60" fill="white">On or Below Average</text>
+            </g>
+            <g>
+                <rect x="300" y="0" width="30" height="30" style="fill:Orange;stroke-width:2;stroke:rgb(0,0,0)"></rect>
+                <text x="350" y="20" fill="white">Above Average</text>
+            </g>
+            <g>
+                <rect x="300" y="40" width="30" height="30" style="fill:Crimson;stroke-width:2;stroke:rgb(0,0,0)"></rect>
+                <text x="350" y="60" fill="white">Variance of ≥ 1</text>
+            </g>
+        </svg>
+       
+        <div id="tooltip" class="flex-right"></div>
+    </div>
+    
+</body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script defer src="./script.js"></script>
+</html>
